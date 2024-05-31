@@ -7,13 +7,17 @@
     <title>FORAGE TOKEN</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header id="main-header" class="d-flex justify-content-between align-items-center p-3 fixed-top">
+    <!-- <header id="main-header" class="d-flex justify-content-between align-items-center p-3 fixed-top">
         <div class="logo d-flex align-items-center">
             <img src="img/foragelogo.png" alt="Logo" width="50">
         </div>
@@ -28,7 +32,37 @@
             <i class="fas fa-bars"></i>
         </div>
         
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <div class="logo d-flex align-items-center">
+                        <img src="img/foragelogo.png" alt="Logo" width="50">
+                    </div>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Plataforma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipo</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary">Empieza Ahora</button>
+            </div>
+        </div>
+    </nav>
     
 
     <!-- Hero Section -->
@@ -38,20 +72,42 @@
             <h1 class="display-6">Descubre el Token del Futuro</h1>
             <h2 class="h4 mt-4 h2hero">Tu Camino hacia la Riqueza Digital con FORAGE TOKEN</h2>
             <p class="mt-4 phero">FORAGE TOKEN es un activo digital revolucionario, desarrollado con la última tecnología blockchain, diseñado para ser seguro, escalable y sostenible. Ofrece oportunidades de inversión únicas y rentables, aprovechando la descentralización y la economía colaborativa.</p>
-            <button class="btn-accent mt-4">Empieza Ahora</button>
+            <button class="btn-accent mt-4">Empieza Ahora  <i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
 
-    <section id="features" class="py-5 bg-light">
+    <section id="features" class="s-features py-5 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="display-5 section-title text-center">CARACTERÍSTICAS PRINCIPALES</h2>
+                    <h2 class="display-5 section-title text-center poppins-bold">CARACTERÍSTICAS PRINCIPALES</h2>
                     <p class="text-center mt-4">FORAGE TOKEN se destaca por su seguridad, escalabilidad y sostenibilidad. Nuestro ecosistema innovador ofrece una plataforma robusta y confiable para todas tus necesidades de inversión.</p>
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-md-5 feature-detail rounded p-4 bg-white">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="features1 d-flex align-items-center justify-content-end flex-column p-5">
+                            <div class="text">
+                                <h3 class="h4 text-center poppins-bold">STAKING</h3>
+                                <p class="text-center">Participa en nuestro sistema de staking y obtén recompensas anuales del 6%. Disponemos de términos flexibles de 30, 60, 90, y 120 días.</p>
+                            </div>                            
+                            <!-- <div class="img-caract">
+                                <img src="img/features1.jpg" alt="Staking" class="img-fluid">
+                            </div> -->
+                        </div>
+                        <div class="features2 d-flex align-items-center justify-content-end flex-column p-5">
+                            <div class="text">
+                                <h3 class="h4 text-center poppins-bold">MAX SUPPLY</h3>
+                                <p class="text-center">FORAGE TOKEN tiene un suministro total de 6,000,000 tokens, de los cuales 1,500,000 están reservados como garantía y seguridad.</p>
+                            </div>
+                            <!-- <div class="img-caract">
+                                <img src="img/features2.jpg" alt="Supply" class="img-fluid">
+                            </div> -->
+                        </div>
+                    </div>                    
+                </div>                
+                <!-- <div class="col-md-5 feature-detail rounded p-4 bg-white">
                     <h3 class="h4 text-center">STAKING</h3>
                     <p class="text-center">Participa en nuestro sistema de staking y obtén recompensas anuales del 6%. Disponemos de términos flexibles de 30, 60, 90, y 120 días.</p>
                     <div class="img-caract">
@@ -67,14 +123,14 @@
                     <div class="img-caract">
                         <img src="img/supply.png" alt="Supply" class="img-fluid">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
-    <section id="reasons" class="d-flex align-items-center justify-content-center vh-100">
+    <section id="reasons" class="s-reasons d-flex align-items-center justify-content-center">
         <div class="container text-center">
-            <h2 class="display-5 section-title">RAZONES PARA INVERTIR</h2>
+            <h2 class="display-5 section-title poppins-bold">RAZONES PARA INVERTIR</h2>
             <p class="mb-5">Explora las principales razones para invertir en FORAGE TOKEN y descubre cómo puede beneficiar tu portafolio.</p>
             <div class="row">
                 <div class="col-md-4">
@@ -123,9 +179,9 @@
         </div>
     </section>
 
-    <section id="use-cases" class="d-flex align-items-center justify-content-center vh-100 bg-light">
+    <section id="use-cases" class="s-use-cases d-flex align-items-center justify-content-center bg-light">
         <div class="container" style=" overflow: hidden;">
-            <h2 class="display-5 section-title text-center">CASOS DE USO</h2>
+            <h2 class="display-5 section-title text-center poppins-bold">CASOS DE USO</h2>
             <div class="bento-grid mt-5">
                 <div class="bento-item large">
                     <img src="img/healthcare.jpg" alt="Salud" class="img-fluid">
@@ -171,7 +227,7 @@
         <div class="glass-container p-5 rounded">
             <h2 class="display-5 text-center">¡NUNCA SE PIERDA UNA ACTUALIZACIÓN <br>DEL TOKEN DE FORRAJE!</h2>
             <form class="d-flex justify-content-center mt-4">
-                <input type="email" class="form-control me-2" placeholder="Enter your email">
+                <input type="email" class="form-control" placeholder="Enter your email">
                 <button type="submit" class="btn btn-primary">Subscribe</button>
             </form>
         </div>
