@@ -106,6 +106,8 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     flex: 1;
+    background-color: #1e1e1e;
+    padding-left: 15px;
 }
 
 
